@@ -40,11 +40,11 @@ export const Button = styled.button`
     width: 250px;
     padding: 20px;
     margin: 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: ${props => props.bgColor};
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 30px;
     transition: background 0.2s;
 
     

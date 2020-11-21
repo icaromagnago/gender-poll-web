@@ -26,8 +26,8 @@ const api = {
                 const totalVotes = data.boy + data.girl;
 
                 let dataPercentage = {
-                    boy: (data.boy / totalVotes * 100).toFixed(1),
-                    girl: (data.girl / totalVotes * 100).toFixed(1),  
+                    boy: data.boy === 0 ? 0 : (data.boy / totalVotes * 100).toFixed(0),
+                    girl: data.girl === 0 ? 0 : (data.girl / totalVotes * 100).toFixed(0),  
                 }
 
                 setPollResult(dataPercentage);

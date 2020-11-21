@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container, Content, Vote } from './styles.js';
 
@@ -15,20 +16,19 @@ export default function PollResult() {
     }, [pollResult]);
 
 
-
     return (
         <Container>
-            <h1>Resultado</h1>
             <Content>
-                <Vote color="#4682B4">
-                    <span>{pollResult.boy}%</span>
-                    <p>VITOR</p>
-                </Vote>
                 <Vote color="#DB7093">
                     <span>{pollResult.girl}%</span>
                     <p>SOFIA</p>
                 </Vote>
+                <Vote color="#4682B4">
+                    <span>{pollResult.boy}%</span>
+                    <p>VITOR</p>
+                </Vote>
             </Content>
+            <Link to="/">Votar novamente</Link>
         </Container>
     );
 }

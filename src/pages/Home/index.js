@@ -8,7 +8,6 @@ import api from '../../services/api';
 export default function Home() {
 
     async function handleOnClick(gender) {
-        console.log(gender);
         await api.vote(gender);
 
         history.push("/obrigado");
@@ -21,18 +20,17 @@ export default function Home() {
                 <div>
                     <Button 
                         type="button" 
-                        bgColor="#4682B4"
-                        onClick={() => handleOnClick('boy')}
-                    >
-                        VITOR
-                    </Button>
-
-                    <Button 
-                        type="button" 
                         bgColor="#DB7093"
                         onClick={() => handleOnClick('girl')}
                     >
                         SOFIA
+                    </Button>
+                    <Button 
+                        type="button" 
+                        bgColor="#4682B4"
+                        onClick={() => handleOnClick('boy')}
+                    >
+                        VITOR
                     </Button>
                 </div>
             </Content>

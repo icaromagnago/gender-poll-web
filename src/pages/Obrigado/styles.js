@@ -11,12 +11,15 @@ export const Container = styled.div`
 
     span {
         color: #fff;
+        width: 300px;
         font-weight: bold;
-        font-size: 75px;
+        font-size: 25px;
+        text-align: center;
     }
 
     div {
         display: flex;
+        flex-direction: column;
         width: 300px;
         justify-content: space-between;
         margin-top: 15px;
@@ -24,9 +27,10 @@ export const Container = styled.div`
         a {
             color: #fff;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 15px;
             border: 1px solid #fff;
-            width: 140px;
+            width: 100%;
+            margin-top: 15px;
             text-align: center;
             padding: 10px;
             border-radius: 4px;
