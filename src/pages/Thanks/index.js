@@ -9,7 +9,7 @@ export default function Obrigado() {
             <span>A Família Brito agradece a sua participação!</span>
             <div>
                 <Link to="/">Votar novamente</Link>
-                <Link to="/result">Ver resultado</Link>
+                <Link to="/result">Acompanhar votação</Link>
             </div>
         </Container>
     );

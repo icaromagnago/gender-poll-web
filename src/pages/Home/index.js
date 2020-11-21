@@ -1,5 +1,6 @@
 import React from 'react';
 import history from '../../services/history';
+import { Link } from 'react-router-dom';
 
 import { Container, Content, Button } from './styles';
 
@@ -10,7 +11,7 @@ export default function Home() {
     async function handleOnClick(gender) {
         await api.vote(gender);
 
-        history.push("/obrigado");
+        history.push("/thanks");
     }
 
     return (
@@ -34,6 +35,7 @@ export default function Home() {
                     </Button>
                 </div>
             </Content>
+            <Link to="/result">Acompanhar votação</Link>
         </Container>
     );
 }
