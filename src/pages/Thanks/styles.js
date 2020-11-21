@@ -7,14 +7,18 @@ export const Container = styled.div`
     height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     span {
         color: #fff;
         width: 300px;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 40px;
         text-align: center;
+
+        svg {
+            margin-left: 10px;
+        }
     }
 
     div {
@@ -22,18 +26,23 @@ export const Container = styled.div`
         flex-direction: column;
         width: 300px;
         justify-content: space-between;
-        margin-top: 15px;
         
         a {
             color: #fff;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 20px;
             border: 1px solid #fff;
             width: 100%;
             margin-top: 15px;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             border-radius: 4px;
         }
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
     }
 `;
