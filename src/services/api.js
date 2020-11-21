@@ -6,11 +6,12 @@ import firebaseConfig from '../firebaseConfig';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
+const docId = 'jR4afKvWU5AzuFpUuez5';
 
 const api = {
     vote: async (gender) => {
         let votesRef = db.collection('votes')
-            .doc('XGUCw6QgC9KHvBkvtPAt');
+            .doc(docId);
         
         let poll = await votesRef.get();
         let pollData = poll.data();
@@ -20,7 +21,7 @@ const api = {
     },
 
     onVoteResult: (setPollResult) => {
-        return db.collection('votes').doc('XGUCw6QgC9KHvBkvtPAt').onSnapshot(doc => {
+        return db.collection('votes').doc(docId).onSnapshot(doc => {
             if (doc.exists) {
                 let data = doc.data();
                 const totalVotes = data.boy + data.girl;
