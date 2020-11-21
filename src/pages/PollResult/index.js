@@ -28,7 +28,7 @@ export default function PollResult() {
                     <p>VITOR</p>
                 </Vote>
             </Content>
-            <Link to="/">Votar novamente</Link>
+            <Link to="/">Tela inicial</Link>
         </Container>
     );
 }
