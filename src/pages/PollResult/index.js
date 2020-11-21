@@ -13,7 +13,7 @@ export default function PollResult() {
         let unsub = api.onVoteResult(setPollResult);
 
         return unsub; //executado quando o componente é destruído
-    }, [pollResult]);
+    }, []);
 
 
     return (
