@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import GlobalStyle from './styles/global';
 import { Router } from 'react-router-dom';
 
