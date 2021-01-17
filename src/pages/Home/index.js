@@ -16,7 +16,7 @@ export default function Home() {
 
     return (
         <Container>
-            <h1>Vote no bebê Brito!</h1>
+            <h1>Vote no bebê Marçal!</h1>
             <Content>
                 <div>
                     <Button 
@@ -24,14 +24,14 @@ export default function Home() {
                         bgColor="#DB7093"
                         onClick={() => handleOnClick('girl')}
                     >
-                        SOFIA
+                        MENINA
                     </Button>
                     <Button 
                         type="button" 
                         bgColor="#4682B4"
                         onClick={() => handleOnClick('boy')}
                     >
-                        VITOR
+                        MENINO
                     </Button>
                 </div>
             </Content>

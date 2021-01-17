@@ -21,11 +21,11 @@ export default function PollResult() {
             <Content>
                 <Vote color="#DB7093">
                     <span>{pollResult.girl}%</span>
-                    <p>SOFIA</p>
+                    <p>MENINA</p>
                 </Vote>
                 <Vote color="#4682B4">
                     <span>{pollResult.boy}%</span>
-                    <p>VITOR</p>
+                    <p>MENINO</p>
                 </Vote>
             </Content>
             <Link to="/">Tela inicial</Link>
